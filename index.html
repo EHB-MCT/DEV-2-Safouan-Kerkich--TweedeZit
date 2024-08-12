@@ -4,14 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
     <h1>Weather App</h1>
     <div class="controls">
         <input type="text" id="city-input" placeholder="Enter city name">
+        <div class="dropdown">
+            <button class="dropbtn">Top Cities</button>
+            <div class="dropdown-content" id="city-dropdown">
+                <a href="#" data-city="New York">New York</a>
+                <a href="#" data-city="London">London</a>
+                <a href="#" data-city="Paris">Paris</a>
+                <a href="#" data-city="Tokyo">Tokyo</a>
+                <a href="#" data-city="Los Angeles">Los Angeles</a>
+                <a href="#" data-city="Rome">Rome</a>
+                <a href="#" data-city="Beijing">Beijing</a>
+                <a href="#" data-city="Moscow">Moscow</a>
+                <a href="#" data-city="Dubai">Dubai</a>
+                <a href="#" data-city="Sydney">Sydney</a>
+            </div>
+        </div>
         <button id="fetch-weather">Search</button>
     </div>
     <div id="weather-container"></div>
     <canvas id="weather-chart"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
